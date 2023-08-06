@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(34, 36, 37);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.bodyFull{
+    width: 100vh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flexImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img{
+    width: 30%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.imgFull {
+    width: 90%;
+    margin: 0;
+    border: 2px solid white;
+}
+
+.leiste{
+    position: absolute;
+    left:0;right: 0;
+    top:0;
+    z-index:10;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    display: none;
+}
+.leisteFull{
+    display: flex;
+}
+
+.vor,.zuruck{
+    width: 20%;
+    cursor: pointer;
+   
+}
+
+.close{
+    cursor: pointer;
+    width: 60%;
+    text-align: right;
+}
+
+.lightboxFull{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  0.5;
+}
