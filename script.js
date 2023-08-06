@@ -69,7 +69,8 @@ function fullScreen(e) {
     let currentIndex = rueckCounter("+");
     newImg.setAttribute("src", arraySrc[currentIndex]);
   });
-
+  
+//"Wisch"-Bewegung bei der Bedienung eines Touchscreens.
   newImg.addEventListener("touchstart", setStart);
   function setStart(eve1) {
     let startX = eve1.changedTouches[0].clientX;
